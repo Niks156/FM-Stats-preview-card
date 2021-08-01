@@ -1,0 +1,131 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;700&family=Lexend+Deca&display=swap');
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.inter {
+    font-family: 'Inter', sans-serif;
+}
+
+.light {
+    font-family: 'Lexend Deca', sans-serif;
+    color: hsla(0, 0%, 100%, 0.75);
+}
+
+.numbers {
+    font-size: 2rem;
+}
+
+.purple {
+    color: hsl(277, 64%, 61%);
+}
+
+.container {
+    background-color: hsl(233, 47%, 7%);
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    flex-wrap: wrap;
+    font-family: 'Inter', sans-serif;
+    align-items: center;
+    justify-content: center;
+}
+
+.stats {
+    font-family: 'Lexend Deca', sans-serif;
+}
+
+.wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.container1 {
+    background-color: hsl(244, 38%, 16%);
+    height: 446px;
+    width: 540px;
+    padding: 50px;
+}
+
+.container1 h2 {
+    font-size: 2.3rem;
+    color: hsl(0, 0%, 100%);
+    padding: 20px;
+}
+
+.container1 p {
+    padding: 20px;
+}
+
+.container1 ul {
+    display: flex;
+}
+
+.container1 li {
+    color: hsl(0, 0%, 100%);
+    padding: 20px;
+    list-style: none;
+}
+
+.container2 {
+    position: relative;
+}
+
+.img:before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background: rgba(172, 87, 224, 0.632);
+    z-index: 999;
+}
+
+@media (max-width: 500px) {
+    .container {
+        padding: 10px;
+        height: fit-content
+    }
+    .wrapper {
+        flex-direction: column-reverse;
+    }
+    .container1 {
+        height: 70%;
+        margin: auto;
+        padding: 50px 0 0 0;
+        text-align: center;
+    }
+    .container1 h2 {
+        font-size: 1.7rem;
+    }
+    .container1 h2,
+    .container1 p,
+    .container1 ul li {
+        padding: 20px 0 20px 0;
+    }
+    .container1 .stats ul {
+        flex-direction: column;
+        text-align: center;
+    }
+    .container2 {
+        height: 20%;
+    }
+    .container2 .img {}
+}
+
+
+/* .attribution {
+    font-size: 11px;
+    text-align: center;
+}
+
+.attribution a {
+    color: hsl(228, 45%, 44%);
+} */
